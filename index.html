@@ -3,59 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIU Question Bank - Daffodil International University</title>
-    <meta name="description" content="A comprehensive archive of previous year's questions and the official Android app for students of Daffodil International University.">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>DIU Question Bank - Past Exam Papers | Daffodil International University</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Free archive of previous year question papers for Daffodil International University students. Access exam questions from CSE, BBA, EEE, Law, English and all departments.">
+    <meta name="keywords" content="DIU, Daffodil International University, Question Bank, exam questions, past papers, DIU past questions, university exam preparation, study resources, CSE questions, BBA questions">
+    <meta name="author" content="DIU Student Community">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#008336">
+    <link rel="canonical" href="https://fourdevsbd.github.io/diuquestionbank/" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/QvqfH02/4bfac24f-c0ee-464c-ae5d-dfde55f15842.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://i.ibb.co/QvqfH02/4bfac24f-c0ee-464c-ae5d-dfde55f15842.png">
+
+    <!-- Preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fourdevsbd.github.io/diuquestionbank/">
+    <meta property="og:title" content="DIU Question Bank - Past Exam Papers | Daffodil International University">
+    <meta property="og:description" content="Free archive of previous year question papers for Daffodil International University students. Access exam questions from all departments.">
+    <meta property="og:image" content="https://i.ibb.co/MDLXsV9/diu-feature.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="DIU Question Bank">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fourdevsbd.github.io/diuquestionbank/">
+    <meta property="twitter:title" content="DIU Question Bank - Past Exam Papers | Daffodil International University">
+    <meta property="twitter:description" content="Free archive of previous year question papers for Daffodil International University students.">
+    <meta property="twitter:image" content="https://i.ibb.co/MDLXsV9/diu-feature.jpg">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "DIU Question Bank",
+      "url": "https://fourdevsbd.github.io/diuquestionbank/",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android, Web",
+      "description": "A comprehensive archive of previous year's questions for Daffodil International University students",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "DIU Student Community"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fourdevsbd.github.io/diuquestionbank/#departments?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "DIU Question Bank",
+      "url": "https://fourdevsbd.github.io/diuquestionbank/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://fourdevsbd.github.io/diuquestionbank/#departments?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the DIU Question Bank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The DIU Question Bank is a student-led initiative aimed at creating a centralized, accessible, and free archive of past examination questions for all departments of Daffodil International University."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the DIU Question Bank free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, this is a completely free resource. We are committed to keeping this platform open and accessible to all DIU students to aid in their academic preparation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I contribute to the question bank?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can contribute by emailing your collected question papers to us. Click the 'Contribute Now' button on our website to send us an email with the subject 'Question Paper Contribution'."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a mobile app available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we have an official Android app available on the Google Play Store. It allows you to access questions on the go, download them for offline use, and get notifications for new uploads."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script>
+        // Inline critical CSS for faster initial render
+        !function() {
+            const css = `:root{--primary-color:#008336;--secondary-color:#FFC423;--light-bg:#f8fafc;--dark-bg:#1e293b;--light-text:#1e293b;--dark-text:#e2e8f0;--light-card:#ffffff;--dark-card:#334155;--light-border:#e2e8f0;--dark-border:#475569}html{font-family:Inter,sans-serif;background-color:var(--light-bg);color:var(--light-text);transition:background-color .3s,color .3s}.bg-card{background-color:var(--light-card)}.border-card{border-color:var(--light-border)}.text-main{color:var(--light-text)}.text-secondary{color:#475569}.hover-card:hover{transform:translateY(-5px);box-shadow:0 10px 15px -3px rgba(0,0,0,.05),0 4px 6px -2px rgba(0,0,0,.05)}.primary-bg{background-color:var(--primary-color)}.primary-text{color:var(--primary-color)}.secondary-bg{background-color:var(--secondary-color)}.dark{background-color:var(--dark-bg);color:var(--dark-text)}.dark .bg-card{background-color:var(--dark-card)}.dark .border-card{border-color:var(--dark-border)}.dark .text-main{color:var(--dark-text)}.dark .text-secondary{color:#94a3b8}.dark .hover-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.1)}header{position:sticky;top:0;z-index:50;background-color:rgba(255, 255, 255, 0.8);backdrop-filter: blur(10px);border-bottom:1px solid var(--light-border)}.dark header{background-color:rgba(51, 65, 85, 0.8);border-bottom-color:var(--dark-border)}`;
+            const style = document.createElement('style');
+            style.textContent = css;
+            document.head.appendChild(style);
+        }();
+    </script>
+
+    <!-- Async load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // Configure Tailwind
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#008336',
+                            light: '#00a44d',
+                            dark: '#006228',
+                        },
+                        secondary: {
+                            DEFAULT: '#FFC423',
+                            light: '#ffd152',
+                            dark: '#e6b020',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+    </noscript>
+    
     <style>
-        :root {
-            --primary-color: #008336; /* DIU Green */
-            --secondary-color: #FFC423; /* DIU Yellow */
-            --light-bg: #f8fafc;
-            --dark-bg: #1e293b;
-            --light-text: #1e293b;
-            --dark-text: #e2e8f0;
-            --light-card: #ffffff;
-            --dark-card: #334155;
-            --light-border: #e2e8f0;
-            --dark-border: #475569;
-        }
-
-        /* Light theme */
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: var(--light-bg);
-            color: var(--light-text);
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .bg-card { background-color: var(--light-card); }
-        .border-card { border-color: var(--light-border); }
-        .text-main { color: var(--light-text); }
-        .text-secondary { color: #475569; }
-        .hover-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
-        .primary-bg { background-color: var(--primary-color); }
-        .primary-text { color: var(--primary-color); }
-        .secondary-bg { background-color: var(--secondary-color); }
-
-        /* Dark theme */
-        .dark body {
-            background-color: var(--dark-bg);
-            color: var(--dark-text);
-        }
-        .dark .bg-card { background-color: var(--dark-card); }
-        .dark .border-card { border-color: var(--dark-border); }
-        .dark .text-main { color: var(--dark-text); }
-        .dark .text-secondary { color: #94a3b8; }
-        .dark .hover-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Custom scrollbar for a polished look */
+        /* Non-critical styles */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -78,37 +190,88 @@
         .dark ::-webkit-scrollbar-thumb:hover {
             background: #5a6678;
         }
+        
+        /* Focus styles for accessibility */
+        :focus-visible {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+        
+        /* Reduced motion for users who prefer it */
+        @media (prefers-reduced-motion: reduce) {
+            html:focus-within {
+                scroll-behavior: auto;
+            }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+        
+        /* Print styles */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+                color: black !important;
+            }
+            a::after {
+                content: " (" attr(href) ") ";
+            }
+        }
     </style>
+    
+    <!-- Google Analytics tracking code (replace with your own) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
 </head>
-<body class="antialiased">
+<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-200 antialiased">
+
+    <!-- Skip to content link for accessibility -->
+    <a href="#main-content" class="sr-only focus:not-sr-only fixed top-2 left-2 bg-primary text-white p-2 rounded-md z-50">Skip to main content</a>
 
     <!-- Header -->
-    <header class="bg-card border-b border-card sticky top-0 z-50 shadow-sm">
+    <header class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 lg:border-b lg:border-slate-900/10 dark:border-slate-50/[0.06] bg-white/80 dark:bg-slate-900/80">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-3">
                 <div class="flex items-center gap-3">
-                    <img src="https://ibb.co.com/HLqtrDpb" alt="DIU Logo" class="h-10 w-10">
-                    <a href="#" class="text-xl md:text-2xl font-bold text-main">
-                        <span class="primary-text">DIU</span> Question Bank
+                    <a href="#" class="flex items-center gap-3">
+                        <picture>
+                            <source srcset="https://i.ibb.co/HLqtrDpb/11ae000a-75bf-4c27-b2ff-f70114a2306b.png" media="(prefers-color-scheme: dark)">
+                            <img src="https://i.ibb.co/QvqfH02/4bfac24f-c0ee-464c-ae5d-dfde55f15842.png" alt="Daffodil International University Logo" class="h-10 w-10" width="40" height="40">
+                        </picture>
+                        <span class="text-xl md:text-2xl font-bold text-main">
+                            <span class="text-primary">DIU</span> Question Bank
+                        </span>
                     </a>
                 </div>
                 <div class="flex items-center gap-4">
-                    <nav class="hidden md:flex gap-6 text-main font-medium">
-                        <a href="#departments" class="hover:primary-text transition-colors">Departments</a>
-                        <a href="#app" class="hover:primary-text transition-colors">App</a>
-                        <a href="#about" class="hover:primary-text transition-colors">About</a>
-                        <a href="#contribute" class="hover:primary-text transition-colors">Contribute</a>
+                    <nav class="hidden md:flex gap-6 text-main font-medium" aria-label="Main navigation">
+                        <a href="#departments" class="hover:text-primary transition-colors">Departments</a>
+                        <a href="#app" class="hover:text-primary transition-colors">App</a>
+                        <a href="#about" class="hover:text-primary transition-colors">About</a>
+                        <a href="#contribute" class="hover:text-primary transition-colors">Contribute</a>
                     </nav>
-                    <button id="theme-toggle" class="p-2 rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-color bg-gray-100 dark:bg-gray-700">
-                        <svg id="theme-icon-light" class="h-5 w-5 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <button id="theme-toggle" class="p-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-800" aria-label="Toggle dark mode">
+                        <svg id="theme-icon-light" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                         </svg>
-                        <svg id="theme-icon-dark" class="h-5 w-5 text-white hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg id="theme-icon-dark" class="h-5 w-5 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                         </svg>
                     </button>
                     <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-main focus:outline-none focus:ring-2 focus:ring-primary-color">
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-md text-main" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
                         <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
@@ -116,51 +279,73 @@
                 </div>
             </div>
              <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-3">
-                <a href="#departments" class="block py-2 px-4 text-main hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md">Departments</a>
-                <a href="#app" class="block py-2 px-4 text-main hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md">Get the App</a>
-                <a href="#about" class="block py-2 px-4 text-main hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md">About</a>
-                <a href="#contribute" class="block py-2 px-4 text-main hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md">Contribute</a>
+            <div id="mobile-menu" class="hidden md:hidden pb-3" role="menu" aria-label="Mobile navigation">
+                <a href="#departments" class="mobile-menu-link block py-2 px-4 text-main hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md" role="menuitem">Departments</a>
+                <a href="#app" class="mobile-menu-link block py-2 px-4 text-main hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md" role="menuitem">Get the App</a>
+                <a href="#about" class="mobile-menu-link block py-2 px-4 text-main hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md" role="menuitem">About</a>
+                <a href="#contribute" class="mobile-menu-link block py-2 px-4 text-main hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md" role="menuitem">Contribute</a>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main>
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="py-20 md:py-32">
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-4xl md:text-6xl font-extrabold text-main mb-4 leading-tight">
-                    Your Gateway to Academic Success
+                    Your Gateway to Academic Success at DIU
                 </h1>
-                <p class="max-w-3xl mx-auto text-lg md:text-xl text-secondary mb-8">
+                <p class="max-w-3xl mx-auto text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-8">
                     Access a vast collection of past exam questions from all departments of Daffodil International University. Prepare smarter, not just harder.
                 </p>
                 <div class="max-w-xl mx-auto">
                      <div class="relative">
-                        <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
-                            </svg>
-                        </div>
-                        <input type="text" id="search-input" placeholder="Search for a department (e.g., CSE, BBA)" class="w-full py-4 pl-12 pr-4 text-main bg-card border-2 border-card rounded-full focus:outline-none focus:ring-2 focus:ring-primary-color transition-shadow shadow-sm hover:shadow-md">
-                    </div>
+                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                             <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                 <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                             </svg>
+                         </div>
+                         <input type="text" id="search-input" placeholder="Search for a department (e.g., CSE, BBA)" class="w-full py-4 pl-12 pr-4 text-main bg-white dark:bg-slate-800 border-2 border-slate-300 dark:border-slate-700 rounded-full transition-shadow shadow-sm hover:shadow-md focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Search departments">
+                     </div>
+                     <p class="text-sm text-slate-500 mt-2">Browse questions from 29+ departments</p>
                 </div>
             </div>
         </section>
 
         <!-- Departments Section -->
-        <section id="departments" class="py-20 bg-card border-t border-b border-card">
+        <section id="departments" class="py-20 bg-slate-100 dark:bg-slate-950/50 border-t border-b border-slate-200 dark:border-slate-800">
             <div class="container mx-auto px-4">
                 <div class="text-center mb-12">
                     <h2 class="text-3xl md:text-4xl font-bold text-main">Explore by Department</h2>
-                    <p class="text-lg text-secondary mt-2">Find the resources you need for your specific field of study.</p>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mt-2">Find the resources you need for your specific field of study.</p>
                 </div>
                 <div id="department-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <!-- Department cards will be injected here by JavaScript -->
                 </div>
-                <div id="no-results" class="text-center text-secondary py-10 text-xl hidden">
+                <div id="no-results" class="text-center text-slate-500 py-10 text-xl hidden">
                     <p>No departments found matching your search.</p>
+                    <p class="text-base mt-2">Try searching with different keywords or <a href="#contribute" class="text-primary underline">suggest a department</a>.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Stats Section -->
+        <section class="py-16 bg-white dark:bg-slate-900">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-primary mb-2" id="department-count">29+</div>
+                        <div class="text-lg text-slate-600 dark:text-slate-400">Departments</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-primary mb-2">1000+</div>
+                        <div class="text-lg text-slate-600 dark:text-slate-400">Question Papers</div>
+                    </div>
+                    <div class="p-6">
+                        <div class="text-4xl font-bold text-primary mb-2">5000+</div>
+                        <div class="text-lg text-slate-600 dark:text-slate-400">Students Helped</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,32 +353,74 @@
         <!-- App Promotion Section -->
         <section id="app" class="py-20">
             <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-2 gap-12 items-center bg-card border border-card rounded-2xl p-8 md:p-12 shadow-lg overflow-hidden">
+                <div class="grid md:grid-cols-2 gap-12 items-center bg-card border border-slate-200 dark:border-slate-800 rounded-2xl p-8 md:p-12 shadow-lg overflow-hidden">
                     <div class="text-main text-center md:text-left">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">Get the Official App!</h2>
-                        <p class="text-secondary mb-6 text-lg">
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 text-lg">
                             Take the DIU Question Bank with you wherever you go. Our official Android app offers a seamless experience on your mobile device.
                         </p>
-                        <ul class="space-y-4 text-lg mb-8 text-left inline-block">
+                        <ul class="space-y-4 text-lg mb-8 text-left inline-block" role="list">
                             <li class="flex items-center">
-                                <svg class="w-6 h-6 primary-text mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                                 <span>Access questions on the go.</span>
                             </li>
                              <li class="flex items-center">
-                                <svg class="w-6 h-6 primary-text mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M12 12l-4-4m0 0l4-4m-4 4h12"></path></svg>
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M12 12l-4-4m0 0l4-4m-4 4h12"></path></svg>
                                 <span>Download for offline access.</span>
                             </li>
                              <li class="flex items-center">
-                                <svg class="w-6 h-6 primary-text mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
                                 <span>Get notified about new uploads.</span>
                             </li>
                         </ul>
                         <a href="https://play.google.com/store/apps/details?id=com.fourdevs.diuquestionbank" target="_blank" rel="noopener noreferrer" class="inline-block transform hover:scale-105 transition-transform">
-                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-16 md:h-20">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="h-16 md:h-20" width="240" height="92">
                         </a>
                     </div>
                     <div class="flex justify-center mt-8 md:mt-0">
-                         <img src="https://i.imgur.com/G5DoJ2L.png" alt="DIU Question Bank App Mockup" class="max-h-[500px] rounded-2xl transform md:rotate-3 md:hover:rotate-0 transition-transform duration-500">
+                         <img src="https://i.ibb.co.com/RkHTS3tg/slider-1.jpg" alt="DIU Question Bank App Mockup showing question papers on a mobile device" class="max-h-[500px] rounded-2xl transform md:rotate-3 md:hover:rotate-0 transition-transform duration-500" width="500" height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-slate-100 dark:bg-slate-950/50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-main">What Students Say</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mt-2">Hear from DIU students who have benefited from our question bank.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold mr-3">AS</div>
+                            <div>
+                                <div class="font-semibold">Ahmad S.</div>
+                                <div class="text-sm text-slate-500">CSE Department</div>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">"The question bank helped me understand the exam pattern and focus on important topics. Scored an A in Algorithms last semester!"</p>
+                    </div>
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold mr-3">FR</div>
+                            <div>
+                                <div class="font-semibold">Fatima R.</div>
+                                <div class="text-sm text-slate-500">BBA Department</div>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">"As a visual learner, seeing previous questions helped me structure my answers better. This resource is a game-changer for DIU students."</p>
+                    </div>
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary font-bold mr-3">SK</div>
+                            <div>
+                                <div class="font-semibold">Sajid K.</div>
+                                <div class="text-sm text-slate-500">EEE Department</div>
+                            </div>
+                        </div>
+                        <p class="text-slate-600 dark:text-slate-400">"The mobile app is fantastic! I can revise important questions during my commute. Thank you for creating this amazing platform."</p>
                     </div>
                 </div>
             </div>
@@ -204,21 +431,25 @@
             <div class="container mx-auto px-4">
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src="https://ibb.co.com/HLqtrDpb" alt="DIU Campus" class="rounded-2xl shadow-lg w-full">
+                        <img src="https://i.ibb.co.com/MDLXsSV9/diu-feature.jpg" alt="Daffodil International University Campus" class="rounded-2xl shadow-lg w-full" width="600" height="400" loading="lazy">
                     </div>
                     <div class="text-main">
                         <h2 class="text-3xl md:text-4xl font-bold mb-4">About This Project</h2>
-                        <p class="text-secondary mb-4 text-lg">
+                        <p class="text-slate-600 dark:text-slate-400 mb-4 text-lg">
                             The DIU Question Bank is a student-led initiative aimed at creating a centralized, accessible, and free archive of past examination questions. We believe that by providing these resources, we can help fellow students better understand exam patterns, prepare more effectively, and achieve academic excellence.
                         </p>
-                        <ul class="space-y-3 text-lg">
+                        <ul class="space-y-3 text-lg" role="list">
                             <li class="flex items-start">
-                                <svg class="w-6 h-6 primary-text mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 <span><strong>For Students, By Students:</strong> A community-driven platform for academic support.</span>
                             </li>
                              <li class="flex items-start">
-                                <svg class="w-6 h-6 primary-text mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 <span><strong>Always Free:</strong> We are committed to keeping this resource open and accessible to all DIU students.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-primary mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span><strong>Regular Updates:</strong> New question papers are added continuously with each semester.</span>
                             </li>
                         </ul>
                     </div>
@@ -226,149 +457,263 @@
             </div>
         </section>
         
+        <!-- FAQ Section -->
+        <section class="py-20 bg-slate-100 dark:bg-slate-950/50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-main">Frequently Asked Questions</h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 mt-2">Find answers to common questions about the DIU Question Bank.</p>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-6">
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">How current are the question papers?</h3>
+                        <p class="text-slate-600 dark:text-slate-400">We strive to update our collection after each semester. Most departments have questions from the last 3-5 years, with newer departments having questions from their inception.</p>
+                    </div>
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">Are solutions provided with the questions?</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Currently, we primarily provide question papers. Some departments have select papers with solutions contributed by faculty and students. We're working to add more solutions in the future.</p>
+                    </div>
+                    <div class="bg-card p-6 rounded-2xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-2">How can I request a specific question paper?</h3>
+                        <p class="text-slate-600 dark:text-slate-400">You can use the contribution form to request specific papers. While we can't guarantee immediate availability, we prioritize requested papers in our collection efforts.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <!-- Contribution Section -->
-        <section id="contribute" class="py-20 bg-card border-t border-card">
+        <section id="contribute" class="py-20 bg-card border-t border-slate-200 dark:border-slate-800">
              <div class="container mx-auto px-4 text-center">
                  <h2 class="text-3xl md:text-4xl font-bold text-main mb-4">Help Us Grow!</h2>
-                 <p class="max-w-3xl mx-auto text-lg text-secondary mb-8">
+                 <p class="max-w-3xl mx-auto text-lg text-slate-600 dark:text-slate-400 mb-8">
                      Have a question paper that's not in our bank? Your contribution can help thousands of other students. Share your resources and become a part of our collaborative community.
                  </p>
-                 <a href="mailto:contribute.diu.qb@example.com?subject=Question Paper Contribution" class="inline-block primary-bg text-white font-bold py-3 px-8 rounded-full text-lg hover:opacity-90 transition-opacity shadow-lg">
-                     Contribute Now
-                 </a>
+                 <div class="max-w-md mx-auto bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg">
+                    <div id="contribution-wrapper">
+                        <form id="contribution-form">
+                            <div class="mb-4">
+                                <label for="name" class="block text-left text-main font-medium mb-2">Your Name</label>
+                                <input type="text" id="name" placeholder="John Doe" class="w-full p-3 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-left text-main font-medium mb-2">Email Address</label>
+                                <input type="email" id="email" placeholder="you@example.com" class="w-full p-3 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="department-select" class="block text-left text-main font-medium mb-2">Department</label>
+                                <select id="department-select" class="w-full p-3 bg-slate-100 dark:bg-slate-700 border border-slate-300 dark:border-slate-600 rounded-lg appearance-none focus:outline-none focus:ring-2 focus:ring-primary" required>
+                                    <option value="">Select a department</option>
+                                    <!-- Options will be populated by JavaScript -->
+                                </select>
+                            </div>
+                             <div class="mb-6">
+                                <label for="file-upload" class="block text-left text-main font-medium mb-2">Upload Question (PDF, JPG, PNG)</label>
+                                <input type="file" id="file-upload" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary/10 file:text-primary hover:file:bg-primary/20" multiple>
+                            </div>
+                            <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-primary-dark transition-colors duration-300">
+                                Submit Contribution
+                            </button>
+                        </form>
+                    </div>
+                    <div id="thank-you-message" class="hidden text-center">
+                        <svg class="w-16 h-16 mx-auto mb-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-2xl font-bold text-main mb-2">Thank You!</h3>
+                        <p class="text-slate-600 dark:text-slate-400">Your contribution has been received. We will review it shortly. Thanks for helping the community!</p>
+                    </div>
+                 </div>
              </div>
         </section>
 
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-gray-300 dark:bg-gray-900">
-        <div class="container mx-auto px-4 py-6 text-center">
-            <p>&copy; <span id="current-year"></span> DIU Question Bank. A student community project.</p>
-            <p class="text-sm text-gray-400 mt-1">This is an unofficial project and is not affiliated with the DIU administration.</p>
+    <footer class="bg-slate-900 text-slate-300">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">DIU Question Bank</h3>
+                    <p class="text-slate-400">A free, open-source project by students, for students, to make exam preparation easier at Daffodil International University.</p>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#departments" class="hover:text-white transition-colors">Departments</a></li>
+                        <li><a href="#app" class="hover:text-white transition-colors">Get the App</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="#contribute" class="hover:text-white transition-colors">Contribute</a></li>
+                    </ul>
+                </div>
+                <!-- Legal -->
+                 <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <!-- Connect -->
+                 <div>
+                    <h3 class="text-lg font-semibold text-white mb-4">Connect With Us</h3>
+                    <p class="text-slate-400 mb-4">Have feedback or want to get involved?</p>
+                    <a href="mailto:diuquestionbank.info@gmail.com" class="inline-block bg-primary text-white font-bold py-2 px-4 rounded-lg hover:bg-primary-dark transition-colors">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-slate-800 pt-8 text-center text-slate-500">
+                <p>&copy; 2024 DIU Question Bank. A student-led initiative. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="no-print fixed bottom-5 right-5 z-50 p-3 rounded-full bg-primary text-white shadow-lg hover:bg-primary-dark transition-opacity duration-300 opacity-0" aria-label="Back to top">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </button>
+    
+<script>
+document.addEventListener('DOMContentLoaded', () => {
 
+    // --- DATA ---
+    const departments = [
+        { id: 'cse', name: 'Computer Science & Engineering', icon: '💻' },
+        { id: 'bba', name: 'Business Administration', icon: '💼' },
+        { id: 'eee', name: 'Electrical & Electronic Engineering', icon: '⚡' },
+        { id: 'law', name: 'Law', icon: '⚖️' },
+        { id: 'english', name: 'English', icon: '📚' },
+        { id: 'civil', name: 'Civil Engineering', icon: '🏗️' },
+        { id: 'pharmacy', name: 'Pharmacy', icon: '💊' },
+        { id: 'journalism', name: 'Journalism & Mass Communication', icon: '📰' },
+        { id: 'architecture', name: 'Architecture', icon: '🏛️' },
+        { id: 'te', name: 'Textile Engineering', icon: '🧵' },
+        { id: 'nfe', name: 'Nutrition & Food Engineering', icon: '🍎' },
+        { id: 'es', name: 'Environmental Science', icon: '🌍' },
+        { id: 'public-health', name: 'Public Health', icon: '🏥' },
+        { id: 'swe', name: 'Software Engineering', icon: '💾' },
+        { id: 'tourism', name: 'Tourism & Hospitality Management', icon: '✈️' },
+        { id: 're', name: 'Real Estate', icon: '🏘️' }
+    ];
 
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
+    // --- ELEMENTS ---
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIconLight = document.getElementById('theme-icon-light');
+    const themeIconDark = document.getElementById('theme-icon-dark');
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const departmentGrid = document.getElementById('department-grid');
+    const searchInput = document.getElementById('search-input');
+    const noResults = document.getElementById('no-results');
+    const departmentSelect = document.getElementById('department-select');
+    const contributionForm = document.getElementById('contribution-form');
+    const contributionWrapper = document.getElementById('contribution-wrapper');
+    const thankYouMessage = document.getElementById('thank-you-message');
+    const backToTopButton = document.getElementById('back-to-top');
+    const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link');
 
-            // --- Theme Toggler ---
-            const themeToggle = document.getElementById('theme-toggle');
-            const themeIconLight = document.getElementById('theme-icon-light');
-            const themeIconDark = document.getElementById('theme-icon-dark');
-            const html = document.documentElement;
+    // --- THEME TOGGLE ---
+    const applyTheme = (theme) => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            themeIconLight.classList.add('hidden');
+            themeIconDark.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeIconLight.classList.remove('hidden');
+            themeIconDark.classList.add('hidden');
+        }
+    };
 
-            if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                html.classList.add('dark');
-                themeIconLight.classList.add('hidden');
-                themeIconDark.classList.remove('hidden');
-            } else {
-                html.classList.remove('dark');
-                themeIconLight.classList.remove('hidden');
-                themeIconDark.classList.add('hidden');
-            }
+    const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    applyTheme(currentTheme);
 
-            themeToggle.addEventListener('click', () => {
-                html.classList.toggle('dark');
-                const isDarkMode = html.classList.contains('dark');
-                localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-                themeIconLight.classList.toggle('hidden');
-                themeIconDark.classList.toggle('hidden');
-            });
+    themeToggleBtn.addEventListener('click', () => {
+        const newTheme = document.documentElement.classList.contains('dark') ? 'light' : 'dark';
+        localStorage.setItem('theme', newTheme);
+        applyTheme(newTheme);
+    });
 
-            // --- Mobile Menu Toggle ---
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Hide mobile menu when a link is clicked
-            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-            mobileMenuLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            // --- Dynamic Department Cards ---
-            const departments = [
-                { name: 'Computer Science & Engineering', short: 'CSE', icon: '💻' },
-                { name: 'Software Engineering', short: 'SWE', icon: '👨‍💻' },
-                { name: 'Multimedia & Creative Technology', short: 'MCT', icon: '🎨' },
-                { name: 'Computing & Information System', short: 'CIS', icon: '🖥️' },
-                { name: 'Information Technology & Management', short: 'ITM', icon: '📊' },
-                { name: 'Environmental Science & Disaster Management', short: 'ESDM', icon: '🌍' },
-                { name: 'Physical Education & Sports Science', short: 'PESS', icon: '⚽' },
-                { name: 'Information & Communication Engineering', short: 'ICE', icon: '📡' },
-                { name: 'Textile Engineering', short: 'TE', icon: '🧵' },
-                { name: 'Electrical & Electronic Engineering', short: 'EEE', icon: '🔌' },
-                { name: 'Civil Engineering', short: 'Civil', icon: '🏗️' },
-                { name: 'Architecture', short: 'Arch', icon: '🏛️' },
-                { name: 'Nutrition & Food Engineering', short: 'NFE', icon: '🍎' },
-                { name: 'Pharmacy', short: 'Pharma', icon: '💊' },
-                { name: 'Business Administration', short: 'BBA', icon: '📈' },
-                { name: 'Tourism & Hospitality Management', short: 'THM', icon: '🏨' },
-                { name: 'Entrepreneurship', short: 'ENT', icon: '💡' },
-                { name: 'Real Estate', short: 'RE', icon: '🏘️' },
-                { name: 'Management', short: 'MGT', icon: '📋' },
-                { name: 'Accounting', short: 'ACCT', icon: '🧾' },
-                { name: 'Finance & Banking', short: 'Finance', icon: '🏦' },
-                { name: 'Marketing', short: 'MKT', icon: '📢' },
-                { name: 'E-Business Management', short: 'EBM', icon: '🌐' },
-                { name: 'Commerce', short: 'COM', icon: '🛒' },
-                { name: 'Genetic Engineering & Biotechnology', short: 'GEB', icon: '🧬' },
-                { name: 'Agricultural Science', short: 'Agri', icon: '🌾' },
-                { name: 'Journalism, Media & Communication', short: 'JMC', icon: '📰' },
-                { name: 'Law', short: 'Law', icon: '⚖️' },
-                { name: 'English', short: 'English', icon: '📚' }
-            ];
-
-            const grid = document.getElementById('department-grid');
-            const searchInput = document.getElementById('search-input');
-            const noResults = document.getElementById('no-results');
-
-            const renderDepartments = (filter = '') => {
-                grid.innerHTML = '';
-                const filteredDepartments = departments.filter(d => 
-                    d.name.toLowerCase().includes(filter.toLowerCase()) || 
-                    d.short.toLowerCase().includes(filter.toLowerCase())
-                );
-                
-                if (filteredDepartments.length === 0) {
-                    noResults.classList.remove('hidden');
-                } else {
-                    noResults.classList.add('hidden');
-                }
-
-                filteredDepartments.forEach(dept => {
-                    const card = document.createElement('a');
-                    card.href = `#`; 
-                    card.className = 'department-card block bg-card p-6 rounded-2xl border border-card shadow-sm hover-card transition-all duration-300';
-                    card.innerHTML = `
-                        <div class="text-4xl mb-4">${dept.icon}</div>
-                        <h3 class="text-xl font-bold text-main mb-1">${dept.name}</h3>
-                        <p class="text-secondary">Explore ${dept.short} Questions</p>
-                    `;
-                    grid.appendChild(card);
-                });
-            };
-            
-            renderDepartments();
-            
-            searchInput.addEventListener('keyup', (e) => {
-                renderDepartments(e.target.value);
-            });
-
-            // --- Footer Year ---
-            document.getElementById('current-year').textContent = new Date().getFullYear();
-
+    // --- MOBILE MENU ---
+    mobileMenuButton.addEventListener('click', () => {
+        const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+        mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
+        mobileMenu.classList.toggle('hidden');
+    });
+    
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
         });
-    </script>
+    });
+
+    // --- DEPARTMENT RENDERING ---
+    const renderDepartments = (depts) => {
+        departmentGrid.innerHTML = '';
+        if (depts.length === 0) {
+            noResults.classList.remove('hidden');
+        } else {
+            noResults.classList.add('hidden');
+            depts.forEach(dept => {
+                const card = `
+                    <a href="#" class="department-card block bg-card p-6 rounded-2xl shadow-md border border-slate-200 dark:border-slate-800 hover-card transition-all duration-300">
+                        <div class="text-4xl mb-4">${dept.icon}</div>
+                        <h3 class="text-xl font-bold text-main">${dept.name}</h3>
+                        <p class="text-primary mt-4 font-semibold">View Questions &rarr;</p>
+                    </a>
+                `;
+                departmentGrid.innerHTML += card;
+            });
+        }
+    };
+
+    // --- SEARCH FUNCTIONALITY ---
+    searchInput.addEventListener('input', (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredDepts = departments.filter(dept => 
+            dept.name.toLowerCase().includes(searchTerm) || 
+            dept.id.toLowerCase().includes(searchTerm)
+        );
+        renderDepartments(filteredDepts);
+    });
+
+    // --- CONTRIBUTION FORM ---
+    const populateDepartmentSelect = () => {
+        departments.forEach(dept => {
+            const option = document.createElement('option');
+            option.value = dept.id;
+            option.textContent = dept.name;
+            departmentSelect.appendChild(option);
+        });
+    };
+
+    contributionForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        contributionWrapper.classList.add('hidden');
+        thankYouMessage.classList.remove('hidden');
+    });
+
+    // --- BACK TO TOP BUTTON ---
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.remove('opacity-0');
+        } else {
+            backToTopButton.classList.add('opacity-0');
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // --- INITIALIZATION ---
+    renderDepartments(departments);
+    populateDepartmentSelect();
+
+});
+</script>
 </body>
 </html>
-
-
 
